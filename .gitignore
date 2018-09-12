@@ -23,8 +23,8 @@ dist/
 node_modules/
 tmp/
 temp/
-platforms/android/app/build
-platforms/android/.gradle*
+#platforms/android/app/build
+#platforms/android/.gradle*
 
 $RECYCLE.BIN/
 
