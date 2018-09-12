@@ -35,3 +35,6 @@ Run these commands inside the folder of your ionic project: <br>
  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
  <uses-permission android:name="android.permission.READ_CALL_LOG" />
  ```
+
+# Important Notes
+When you test the app be sure to have given Phone permissions to the app.
