@@ -24,6 +24,11 @@ node_modules/
 tmp/
 temp/
 platforms/android/app
+platforms/android/cordova*
+platforms/android/Cordova*
+platforms/android/.gradle*
+
+
 $RECYCLE.BIN/
 
 .DS_Store
