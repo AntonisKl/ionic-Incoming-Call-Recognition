@@ -27,6 +27,7 @@ platforms/android/app
 platforms/android/cordova*
 platforms/android/Cordova*
 platforms/android/.gradle*
+plugins/cordova*
 
 
 $RECYCLE.BIN/
