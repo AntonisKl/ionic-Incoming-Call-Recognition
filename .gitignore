@@ -24,8 +24,6 @@ node_modules/
 tmp/
 temp/
 platforms/android/app/build
-platforms/android/cordova*
-platforms/android/Cordova*
 platforms/android/.gradle*
 plugins/cordova*
 
