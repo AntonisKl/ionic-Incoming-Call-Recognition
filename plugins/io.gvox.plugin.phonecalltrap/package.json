@@ -1,0 +1,61 @@
+{
+  "_from": "io.gvox.plugin.phonecalltrap",
+  "_id": "io.gvox.plugin.phonecalltrap@0.1.2",
+  "_inBundle": false,
+  "_integrity": "sha1-JvJTnWuTW//ptYEHDS1YJ2WNJDs=",
+  "_location": "/io.gvox.plugin.phonecalltrap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "io.gvox.plugin.phonecalltrap",
+    "name": "io.gvox.plugin.phonecalltrap",
+    "escapedName": "io.gvox.plugin.phonecalltrap",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/io.gvox.plugin.phonecalltrap/-/io.gvox.plugin.phonecalltrap-0.1.2.tgz",
+  "_shasum": "26f2539d6b935bffe9b581070d2d5827658d243b",
+  "_spec": "io.gvox.plugin.phonecalltrap",
+  "_where": "E:\\Documents\\IonicProjects\\incomingCallRecognition",
+  "author": {
+    "name": "Renan Oliveira and Felipe Ferreira"
+  },
+  "bugs": {
+    "url": "https://github.com/renanoliveira/cordova-phone-call-trap/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "io.gvox.plugin.phonecalltrap",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "A phone call trap",
+  "homepage": "https://github.com/renanoliveira/cordova-phone-call-trap#readme",
+  "keywords": [
+    "phonegap",
+    "calendar",
+    "phone",
+    "call",
+    "phone-call",
+    "ringing",
+    "phone-state",
+    "call-state",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "io.gvox.plugin.phonecalltrap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanoliveira/cordova-phone-call-trap.git"
+  },
+  "version": "0.1.2"
+}
