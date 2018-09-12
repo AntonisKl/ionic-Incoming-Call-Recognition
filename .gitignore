@@ -23,6 +23,7 @@ dist/
 node_modules/
 tmp/
 temp/
+platforms/android/app
 $RECYCLE.BIN/
 
 .DS_Store
