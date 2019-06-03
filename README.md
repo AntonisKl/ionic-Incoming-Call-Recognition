@@ -12,29 +12,12 @@ All the possible call states are: <b>IDLE, OFFHOOK, RINGING</b>.
 Simultaneously, the <b>CallStateListener</b> which is also triggered by the state change, sends the <b>incoming phone number</b> as PluginResult to the <b>PhoneCallTrap</b> cordova plugin.
 * Eventually, <b>ionic</b> gets the call state of the phone as well as the <b>incoming phone number</b> (only if the state is RINGING) and prints them on the console.
 
-# How-to integrate to any ionic v1 project
+# How to integrate to any ionic v1 project
 Run these commands inside the folder of your ionic project: <br>
 <b>(if you already have cordova and android platform installed start from the 3rd command)</b>
 * npm install -g cordova
 * cordova platform add android
-
-* cordova plugin add io.gvox.plugin.phonecalltrap
-
-<br>Next:
-* Replace the files in the folder "platforms\android\app\src\main\java\io\gvox\phonecalltrap" with the files that are in the phonecalltrap folder of this project
-* Add the following code in "platforms\android\app\src\main\AndroidManifest.xml" inside the "application" xml section:
- ```
-  <receiver android:enabled="true" android:exported="true" android:name="io.gvox.phonecalltrap.MyBroadcastReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.PHONE_STATE" />
-            </intent-filter>
-        </receiver>
-  ```
- * Also add the following code in the same file as above inside the "manifest" xml section:
- ```
- <uses-permission android:name="android.permission.READ_PHONE_STATE" />
- <uses-permission android:name="android.permission.READ_CALL_LOG" />
- ```
+* cordova plugin add antonis.phonecalltrap
 
 # Important Notes
 When you test the app be sure to have given Phone permissions to the app.
