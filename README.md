@@ -4,6 +4,7 @@ This is an ionic project that uses the PhoneCallTrap cordova plugin and a Broadc
 # Compatibility
 * Android
 * ionic v1
+* ionic v3
 
 # Documentation
 * The project uses a <b>BroadcastReceiver</b> which has an onReceive method implemented. This method is called whenever the phone <b>changes call state</b>.
