@@ -7,18 +7,17 @@ This is an ionic project that uses the PhoneCallTrap cordova plugin and a Broadc
 * ionic v3
 
 # Documentation
-* The project uses a <b>BroadcastReceiver</b> which has an onReceive method implemented. This method is called whenever the phone <b>changes call state</b>.
-All the possible call states are: <b>IDLE, OFFHOOK, RINGING</b>.
-* When the phone goes into RINGING state and thus the onReceive method is called, the onReceive method is sending the <b>incoming phone number</b> to the <b>CallStateListener</b>.
-Simultaneously, the <b>CallStateListener</b> which is also triggered by the state change, sends the <b>incoming phone number</b> as PluginResult to the <b>PhoneCallTrap</b> cordova plugin.
-* Eventually, <b>ionic</b> gets the call state of the phone as well as the <b>incoming phone number</b> (only if the state is RINGING) and prints them on the console.
+The project uses a <b>BroadcastReceiver</b> which has an onReceive method implemented. This method is called whenever the phone <b>changes call state</b>. All the possible call states are: `IDLE`, `OFFHOOK` and `RINGING`.
 
-# How to integrate to any ionic v1 project
+## Pipeline
+Phone goes into `RINGING` state &rarr; the `onReceive` method gets called and sends the incoming phone number to the `CallStateListener` &rarr; The `CallStateListener`, also triggered by the state change, sends the phone number as `PluginResult` to the PhoneCallTrap cordova plugin &rarr; ionic gets the call state as well as the phone number and prints them on the console.
+
+# How to integrate into any ionic project
 Run these commands inside the folder of your ionic project: <br>
 <b>(if you already have cordova and android platform installed start from the 3rd command)</b>
-* npm install -g cordova
-* cordova platform add android
-* cordova plugin add antonis.phonecalltrap
+1. `npm install -g cordova`
+2. `cordova platform add android`
+3. `cordova plugin add antonis.phonecalltrap`
 
 # Important Notes
-When you test the app be sure to have given Phone permissions to the app.
+Phone permissions must be given to the app for the plugin to work properly.
